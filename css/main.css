@@ -9,6 +9,7 @@ body {
     margin: auto;
 
 }
+.clearfix{clear: both;}
 
 /* end main rulez */
 /* start header */
@@ -128,7 +129,7 @@ body {
 }
 
 .my-education .main,
-.my-education .exp {
+.my-education .exp{
     width: 50%;
     float: left;
 }
