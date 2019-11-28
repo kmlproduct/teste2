@@ -15,7 +15,34 @@ body {
 /* start header */
 .header .slider {
     background-color: #EEE;
-    height: 200px;
+    -webkit-background-size: cover;
+    background-image: url('../img/slider.jpg');
+}
+.header .slider .intro  {
+    margin:0;
+    text-align:center;
+    color:#FFF;
+    height:300px;
+    padding-top:300px;
+    
+}
+.header .slider .intro h2 {
+    margin:0 auto;
+    width:600px;
+    border-top: 2px solid #FFF;
+    border-bottom:2px solid #FFF;
+    padding:3px 0;
+    font-size: 50px;
+}
+.header .slider .intro button
+{
+    background:none;
+    width:140px;
+    margin-top:30px;
+    font-size: 20px;
+    border: 1px solid #FFF;
+    font-weight: bold;
+    padding:10px 20px;
 
 }
 
@@ -38,10 +65,12 @@ body {
 }
 
 .header .navbar ul {
+    float: right;
     list-style: none;
     padding-left: 0;
     overflow: hidden;
-    float: right;
+   
+    
 }
 
 .header .navbar ul li {
@@ -49,26 +78,39 @@ body {
     padding: 10px;
 
 }
+.header .navbar ul li a
+{
+    color:#FFF;
+    text-decoration: none;
+}
+.header .navbar ul li .active a,
+.header .navbar ul li a:hover{color:#2ecc71;}
 
 /*end header*/
 /* start features*/
 .features {
     overflow: hidden;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .features .feat {
     float: left;
     width: 33.3333%;
     height: 150px;
-    background-color: #DDD;
+    background-color:#FFF
 }
 
 .features .feat h2 {
-    text-transform: uppercase;
+    color:#444;
 }
-
+.features .feat p
+{
+    line-height: 1.7;
+    color:#555;
+    text-align:justify;
+    padding:0 20px 0 0;
+}
 
 /*end features*/
 /*start about me*/
@@ -78,23 +120,56 @@ body {
 }
 
 .about-me .image {
-    float: left
+    float: left;
+    width:40%;
 }
 
 .about-me .info {
-    float: right;
+    float: left;
+    width:60%;
+}
+.about-me .info h2 {margin: 40px 0 20px 40px; color:#555}
+.about-me .info > p{
+     margin:0 0 10px 40px;
+     
+}
+.about-me .info > p:last-of-type{
+    margin-top:30px;
+}
+.about-me .info p{
+   
+    line-height:1.7;
+    color:#666
 }
 
 .about-me .info .hobbies {
     overflow: hidden;
-    margin: 20px;
+    margin: 10px 0 0 40px;
 }
-
-.about-me .info .hobbies>div {
+.about-me .info .hobbies .content {
     float: left;
     width: 50%;
     min-height: 100px;
 }
+.about-me .info .hobbies .content h3{color:#555}
+.about-me .info .hobbies .content .icon{
+    float:left;
+    width:25%;
+    
+}
+.about-me .info .hobbies .content .icon img{
+    max-width:50px;
+    margin:10px 10px 0 0;
+    
+}
+.about-me .info .hobbies .content .text
+{
+    float:left;
+    width:75%;
+}
+
+
+
 
 /*end about me*/
 /*start my skills*/
@@ -112,7 +187,7 @@ body {
 
 /*end my skills*/
 /*start resume*/
-.resumer {
+.resume {
     background-color: #F2F2F2;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -124,14 +199,69 @@ body {
 /*start my education*/
 .my-education {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom:10px;
     overflow: hidden;
 }
 
 .my-education .main,
-.my-education .exp{
-    width: 50%;
-    float: left;
+.my-education .exp {
+    width:50%;
+    float:left;
 }
 
 /*end my education*/
+/*start test timonials*/
+.testimonials {
+    background-color: #F2F2F2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+/*end test imonials*/
+/*start portfolio*/
+.portfolio
+{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.portfolio .our-work
+{
+    overflow:hidden;
+}
+.portfolio .our-work > div
+{
+    float: left;
+    width: 33.3333%;
+    margin-bottom:10px;
+}
+.portfolio .our-work > div img {width:95%; margin:10px;}
+/*end portfolio*/
+/*start contact me*/
+.contact-me
+{
+    background-color:#252F31;
+    overflow:hidden;
+}
+.contact-me h2 
+{
+    color:#FFF;
+}
+.contact-me p {color:#6A6E71}
+.conatct-me .info 
+{
+    float:left;
+    width:50%;
+
+}
+
+/*end contact me*/
+/*start footer*/
+.footer {
+    background-color:#191F22;
+    color:#6A6E71; 
+    padding:20px 0 ;
+    text-align:center;
+}
+/*end footer*/
