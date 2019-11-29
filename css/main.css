@@ -7,6 +7,7 @@ body {
 .container {
     width: 900px;
     margin: auto;
+    
 
 }
 .clearfix{clear: both;}
@@ -177,12 +178,53 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
+    background-color: rgb(255, 255, 255);
 }
 
 .my-skills .skills,
 .my-skills .progress {
     width: 50%;
     float: left;
+}
+.my-skills .skills h2 {
+    margin: 40px 0 20px 40px;
+     color:#555
+    }
+.my-skills .skills p{
+     margin:0 0 10px 40px;
+     line-height:1.7;
+    color:#666
+     
+}
+.my-skills .skills p:last-of-type{
+    margin-top:30px;
+}
+.my-skills .skills button 
+{
+    
+    margin-top:20px;
+    margin-left:40px;
+}
+.my-skills .progress .tech .h3{margin-left:50px}
+.my-skills progress .tech .h3
+{
+    color:#555
+}
+.my-skills .progress .tech div{
+    background-color:#F2F2F2;
+    height:20px;
+
+}
+.my-skills .progress .tech div span
+{
+    background-color:#2DCC70;
+    width:80%;
+    height:25px;
+    line-height:25px;
+    display:block;
+    text-align:right;
+    color:#FFF;
+    font-weight: bold;
 }
 
 /*end my skills*/
@@ -193,22 +235,71 @@ body {
     padding-bottom: 30px;
     text-align: center;
 }
+.resume h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#666;
+}
+.resume p{
+    line-height:1.7;
+    color:#666;
+    padding:0 40px;
+}
+.resume button
+{
+
+}
+
 
 
 /*end resume*/
 /*start my education*/
 .my-education {
     padding-top: 10px;
+    background-color:rgb(248, 231, 231);
     padding-bottom:10px;
     overflow: hidden;
 }
-
-.my-education .main,
-.my-education .exp {
+.my-education .main
+{
     width:50%;
+    margin-right: 10%;
     float:left;
 }
+.my-education .main p
+{
+    margin: 0 0 10px 40px;
+    line-height:1.6;
+    color:#666;
+}
+.my-education .main p:last-of-type {
+    margin-top:25px;
+}
+.hr{margin-right:50%}
 
+.my-education .exp {
+    width:40%;
+    float:left;
+}
+.my-education .exp h3 {
+    margin-top:80;
+    margin-bottom:8px;
+}
+.my-education .exp span{
+    display:block;
+    margin-bottom:8px;
+}
+.my-education .exp span:first-of-type {
+    color:rgb(107, 107, 107);
+}
+.my-education .exp span:last-of-type{
+    background-color:#2DCC70;color:#FFF;
+    display:inline-block;
+    padding:10px;
+}
+.my-education .exp p {
+    
+    color:#555}
 /*end my education*/
 /*start test timonials*/
 .testimonials {
@@ -216,6 +307,20 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+}
+.testimonials h2{
+color:rgb(180, 168, 199);
+}
+.testimonials h2:hover{color:#2DCC70;
+    background-color:yellow;
+display:inline;
+padding:0;
+}
+.testimonials p{
+    color:#666;
+   
+    font: italic 15px/1.7 tahoma,arial;
+
 }
 
 
@@ -265,3 +370,16 @@ body {
     text-align:center;
 }
 /*end footer*/
+/*startmy framework*/
+.my-button
+{
+    background:none;
+    border:3px solid #2DCC70;
+    padding:10px 10px;
+    color: #2DCC70;
+}
+.my-button:hover{
+    color:#f5613c;
+    border:3px solid #f5613c;
+}
+/*end my framework*/
